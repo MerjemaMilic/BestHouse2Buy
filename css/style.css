@@ -95,7 +95,11 @@ header a:hover{
 
 #showcase{
     min-height: 600px;
+<<<<<<< HEAD
+   background:url('../img/bg1.png') no-repeat;
+=======
    background:url('../img/test_bg2.png') no-repeat;
+>>>>>>> f5497e2ae16b95b8357d180cdc6d7a3ba949740e
    background-size:cover;
     text-align: center;
     color: #ffffff;
@@ -565,12 +569,36 @@ span{
 }
 
 
+<<<<<<< HEAD
+i.fa-check-circle  {
+  font-size: 23px !important;
+=======
 i.fa-users  {
   font-size: 17px !important;
+>>>>>>> f5497e2ae16b95b8357d180cdc6d7a3ba949740e
 }
 
 
 i.fa-cubes  {
+<<<<<<< HEAD
+  font-size: 23px !important;
+}
+
+i.fa-money  {
+  font-size: 23px !important;
+}
+
+i.fa-user  {
+  font-size: 23px !important;
+}
+
+i.fa-adjust  {
+  font-size: 23px !important;
+}
+
+i.fa-search  {
+  font-size: 23px !important;
+=======
   font-size: 17px !important;
 }
 
@@ -580,6 +608,7 @@ i.fa-book  {
 
 i.fa-user  {
   font-size: 17px !important;
+>>>>>>> f5497e2ae16b95b8357d180cdc6d7a3ba949740e
 }
 
 
@@ -596,8 +625,14 @@ i.fa-home  {}
 
 .side_text {
   text-align: center !important;
+<<<<<<< HEAD
+  font-size: 14px;
+  padding-left: 10px;
+
+=======
   font-size: 13px;
   padding-left: 10px;
+>>>>>>> f5497e2ae16b95b8357d180cdc6d7a3ba949740e
 }
 
 #side_naslov {

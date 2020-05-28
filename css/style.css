@@ -4,7 +4,19 @@ body {
   line-height: 1.5;
   padding: 0;
   margin: 0;
+  background-size: cover;
+  height: 100vh;
 }
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  font-family: 'Montserrat', sans-serif; 
+}
+
 
 body p{
   font-family: 'Montserrat', sans-serif; 
@@ -20,6 +32,7 @@ body p{
   overflow: hidden;
   font-family: sans-serif;
 }
+
 
 ul{
     font-family: 'Montserrat', sans-serif; 
@@ -94,17 +107,16 @@ header a:hover{
 /* Showcase */
 
 #showcase{
-    min-height: 600px;
-<<<<<<< HEAD
+  min-height: 650px;
    background:url('../img/bg1.png') no-repeat;
-=======
-   background:url('../img/test_bg2.png') no-repeat;
->>>>>>> f5497e2ae16b95b8357d180cdc6d7a3ba949740e
    background-size:cover;
-    text-align: center;
+   background-position: right bottom ;
+   background-attachment: fixed;
     color: #ffffff;
     min-width: 250px;
 }
+
+
 
 
 
@@ -245,7 +257,6 @@ header{
 .hero{
     height: 100%;
     width: 100%;
-    background-image: url('../img/bg_test.jpg');
     background-position: center;
     background-size: cover;
     position: absolute;
@@ -369,6 +380,8 @@ span{
   text-align: left;
   font: bold 16px sans-serif;
   padding: 55px 50px;
+
+  
 }
 
 .footer-distributed .footer-left,
@@ -388,7 +401,7 @@ span{
 /* Logo*/
 .footer-distributed h3 {
   color:  #ffffff;
-  font: normal 36px 'Open Sans', cursive;
+  font: normal 36px 'Montserrat', sans-serif;
   margin: 0;
 }
 
@@ -525,7 +538,8 @@ span{
 @media (max-width: 880px) {
 
   .footer-distributed { 
-    font: bold 14px sans-serif;
+    font:  14px; 
+     font-family: 'Montserrat', sans-serif;
   }
 
   .footer-distributed .footer-left,
@@ -541,6 +555,7 @@ span{
     margin-left: 0;
   }
 }
+
 
 
 
@@ -569,18 +584,12 @@ span{
 }
 
 
-<<<<<<< HEAD
 i.fa-check-circle  {
   font-size: 23px !important;
-=======
-i.fa-users  {
-  font-size: 17px !important;
->>>>>>> f5497e2ae16b95b8357d180cdc6d7a3ba949740e
 }
 
 
 i.fa-cubes  {
-<<<<<<< HEAD
   font-size: 23px !important;
 }
 
@@ -598,18 +607,13 @@ i.fa-adjust  {
 
 i.fa-search  {
   font-size: 23px !important;
-=======
-  font-size: 17px !important;
 }
 
-i.fa-book  {
-  font-size: 17px !important;
+i.fa-star {
+  color: #FEC402;
 }
 
-i.fa-user  {
-  font-size: 17px !important;
->>>>>>> f5497e2ae16b95b8357d180cdc6d7a3ba949740e
-}
+
 
 
 i.fa-home  {}
@@ -625,14 +629,9 @@ i.fa-home  {}
 
 .side_text {
   text-align: center !important;
-<<<<<<< HEAD
   font-size: 14px;
   padding-left: 10px;
 
-=======
-  font-size: 13px;
-  padding-left: 10px;
->>>>>>> f5497e2ae16b95b8357d180cdc6d7a3ba949740e
 }
 
 #side_naslov {
@@ -677,20 +676,187 @@ i.fa-home  {}
   font-size: 28px;
 }
 
+/* CONTACT FORM */
+
+body.contact {
+  background: url('../img/bg_login2.png') top center; 
+  background-attachment: fixed;
+
+
+}
+
+body.login {
+  background: url('../img/bg_login2.png') top center;
+  background-attachment: fixed;
 
 
 
+}
+
+
+.wrapper{
+  position: absolute;
+  top: 45%;
+ transform: translateY(-25%); 
+  width: 100%;
+  padding: 0 20px;
+}
+
+.contact-form{
+  display: flex;
+  max-width: 550px;
+  margin: 0 auto;
+  background: #2c3e50;
+  padding: 50px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+.input-fields{
+  display: flex;
+  flex-direction: column;
+  margin-right: 4%;
+}
+
+.input-fields,
+.msg{
+  width: 48%;
+}
+
+.input-fields .input,
+.msg textarea{
+  margin: 10px 0;
+  background: transparent;
+  border: 0px;
+  border-bottom: 2px solid #c5ecfd;
+  padding: 10px;
+  color: #c5ecfd;
+  width: 100%;
+}
+
+.msg textarea{
+  height: 212px;
+}
 
 
 
+.btn {
+    background: linear-gradient(to right, #8EB1C7, #6dd5ed);
+    text-align: center;
+    padding: 15px;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+@media screen and (max-width: 600px){
+  .contact-form{
+    flex-direction: column;
+  }
+  .msg textarea{
+    height: 80px;
+  }
+  .input-fields,
+  .msg{
+    width: 100%;
+  }
+}
 
 
 
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
 
 
 
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
 
 
+
+.d-flex {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+}
+
+.flex-grow {
+  flex-grow: 1;
+}
 
 
 
